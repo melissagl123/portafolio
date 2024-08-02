@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --color-fondo:#000000;
+    --color-letra:#F6F6F6;
+    --color-icono:#22D4FD;
+
+    --letra-mon:'Montserrat',sans-serif;
+    --letra-krona:'krona one',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    box-sizing: border-box;
+    }
+
+
+.header{
+    padding-top: 2%;
+    padding-left: 15%;
+    /*padding: 2% 0% 0% 15%*/
+
+}
+
+.header__menu{
+    display: flex;
+    gap:80px;
+}
+
+.header__menu__link{
+    font-family: var(--letra-mon);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-icono);
+    text-decoration: none;
+}
+
+.titulo-destacado{
+    color: var(--color-icono);
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap:82px;
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__imagen{
+    width: 50%;
+}
+.presentacion__contenido__titulo{
+    font-size: 2.25rem;
+    font-family: var(--letra-krona);
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--letra-mon);
+}
+
+.presentacion__enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.presentacion__enlaces__link{
+    border: 2px solid var(--color-icono);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-letra);
+    font-family: var(--letra-mon);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: #272727;
+}
+
+.presentacion__enlace__subtitulo{
+    font-family:var(--letra-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.footer{
+    background-color: var(--color-icono);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--letra-mon);
+    font-size: 1.5rem;
+    font-weight: 25rem;
+    color: var(--color-fondo);
+}
+
+@media(max-width:1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
+        
+    }
+}
